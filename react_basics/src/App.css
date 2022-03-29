@@ -1,0 +1,18 @@
+.app{
+  min-height: 100vh;
+  background-color: rgb(158, 152, 199);
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.tweet {
+  border: 3px solid slateblue;
+  border-radius: 20px;;
+  height: 300px;
+  width:300px;
+  background: rgb(145, 133, 228);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
