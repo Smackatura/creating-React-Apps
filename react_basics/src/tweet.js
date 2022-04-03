@@ -1,14 +1,15 @@
 import React from "react";
 import "./App.css"
+
 //rather than writing props we can add curly braces and add two parameters.
-function Tweet({name,msg,likes}){
+function Tweet({name,message,likes}){
     // inside our functions parameter we can add "props"
     //what is a props? its an arguement much like the variable substitution in python
     //ex: {name} will loop through the list of names to render each name.
     return(
         <div className="tweet">
             <h3>{name}</h3>
-            <p>{msg}</p>
+            <p>{message}</p>
             <p>{likes}</p>
         </div>
     );
