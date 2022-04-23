@@ -3,6 +3,7 @@ import './App.css';
 import Nav from "./Nav";
 import About from "./About";
 import Shop from "./Shop";
+import Item from "./ItemDetail";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 
@@ -15,7 +16,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/shop" element={<Shop/>}/>
+            <Route path="/shop" exact element={<Shop/>}/>
+            {/* youtuber was using deprecated components instead of react-18 "element" */}
+            <Route path="/shop/:id" element={<Item/>} />
           </Routes>
       </div>
     </Router>
